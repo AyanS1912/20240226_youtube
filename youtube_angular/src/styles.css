@@ -1,0 +1,287 @@
+/* You can add global styles to this file, and also import other style files */
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.homepage{
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+}
+.navbar{
+    padding: 0px;
+    margin: 0px; 
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* align-items: stretch; */
+    background-color: black;
+    /* border: 2px solid black; */
+}
+.hamburger-icon{
+    display: flex;
+    background-color: black;
+    height: 100%;
+    flex-grow: 1;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin : 10px 8px 10px 15px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid white ; */
+}
+.hamburger:hover{
+    background-color: rgb(31, 29, 29);
+}
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border: 1px solid black ;
+}
+
+.s-icon{
+    /* background-color: black; */
+    color: white;
+    width: 100%;
+    height: 74px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    padding: 10px 10px 14px 2px;
+    margin-right: 10px;
+    align-items:center;
+}
+.s-icon:hover{
+    background-color: gray;
+}
+
+.img-yt{
+    height: 52.8px;
+    width: 100%;
+}
+
+.search-mic {
+    display: flex;
+    align-items: center;
+    flex-basis: 40%;
+    margin-left: 40px;
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+    border: 4px solid black;
+}
+
+.input {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 6px;
+    padding: 12px;
+    border: 2px solid rgb(20, 19, 19);
+}
+
+.search-mic .search {
+    min-width: 60px;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-left: 15px;
+    padding: 5px;
+    border: 2px solid black;
+    /* background-color: white; */
+}
+
+.search-mic .mic {
+    width: 85px;
+    height: 100%;
+    border-radius: 100%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid black;
+    /* background-color: white; */
+}
+
+.mic:hover ,.search:hover{
+    background-color: rgb(49, 48, 48)  ;
+}
+  
+.for-users{
+    display: flex;
+    background-color: black;
+    height: 100%;
+    flex-grow: 1;
+    border: 2px solid black;
+    align-items:center;
+    justify-content: flex-end;
+}
+.user{
+    /* border: 2px solid yellow; */
+    padding:0px 5px 0px 5px ;
+    margin-right: 20px;
+    height: 80%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    /* align-items:flex-start; */
+    width: 100%;
+    height: calc(100vh - 56px);
+}
+
+.sidebar{
+    padding: 0px 0px 0px 0px;
+    background-color: black;
+    font-size:x-small;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.view{
+    padding: 0px 0px 0px 0px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hscroll{
+    /* border: 2px solid white; */
+    height: 80px;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.btn-scroll{
+    background-color: #ffffff1f;
+    color:white;
+    padding: 5px 12px 5px 12px; 
+    margin :  8px;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight:600;
+    border: 2px solid black;
+}
+
+.btn-scroll:hover{
+    background-color: white;
+    color: black;
+}
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.video {
+    width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px 20px 20px 20px;
+    margin-top:25px;
+    margin-bottom: 20px;
+    margin-right: 5px ;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(15, 12, 12);
+}
+
+.video img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-details {
+    text-align: left;
+    margin-top: 10px;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+}
+
+.vd1{
+    height: 100%;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vd2{
+    height:100%;
+    width:85%;
+    /* border: 1px solid beige; */
+}
+.vd2 h2 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+}
+.vd2 h2  {
+    margin-right: 20px;
+}
+
+.vd2 p {
+    margin-bottom: 5px;
+    color: #f9f9f9;
+}
+
+.views span {
+    margin-right: 5px;
+    color: white;
+}
+
+.youtuber-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+
