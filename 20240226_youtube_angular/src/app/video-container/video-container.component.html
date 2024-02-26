@@ -1,0 +1,25 @@
+<div class="videos-container">
+    <div class="video" *ngFor="let video of videos;let i = index;">
+        <div>
+            <img src="https://picsum.photos/200/300?random=1" alt="Video 1 Thumbnail">
+        </div>
+
+        <div class="video-details">
+            <div class="details-1">
+                <img
+                    src="https://i.postimg.cc/8cx4wH5R/HD-wallpaper-sasuke-uchiha-sharingan-naruto-characters-manga-artwork-naruto-thumbnail.jpg">
+            </div>
+            <div class="details-2">
+                <h2>
+                    {{video.title}}
+                </h2>
+                <p>{{video.youtuber}}</p>
+                <div class="views">
+                    <span>{{formatcount(video.views)}} views</span>
+                    <span>•</span>
+                    <span>{{video.year}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
