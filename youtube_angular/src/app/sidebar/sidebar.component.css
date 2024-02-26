@@ -1,0 +1,28 @@
+.sidebar{
+    padding: 0px 0px 0px 0px;
+    background-color: black;
+    font-size:x-small;
+    width: 72px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .icon{
+    /* background-color: black; */
+    color: white;
+    width: 64px;
+    height: 74px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    padding: 16px 0px 14px;
+    align-items:center;
+}
+.sidebar .icon:hover{
+    background-color: gray;
+}
+
+
