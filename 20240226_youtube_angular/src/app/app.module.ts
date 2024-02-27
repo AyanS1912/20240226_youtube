@@ -9,6 +9,7 @@ import { ContentPageComponent } from './content-page/content-page.component';
 import { VideoContainerComponent } from './video-container/video-container.component';
 import { HomeComponent } from './home/home.component';
 import { SubscriberComponent } from './subscriber/subscriber.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SubscriberComponent } from './subscriber/subscriber.component';
     ContentPageComponent,
     VideoContainerComponent,
     HomeComponent,
-    SubscriberComponent
+    SubscriberComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

@@ -49,7 +49,79 @@
         </svg>
       </div>
       <div class="user">
-        <img src="https://i.postimg.cc/ydx0YbQV/1338840.png">
+        <img src="https://i.postimg.cc/ydx0YbQV/1338840.png" (click)="print()">
       </div>
+      <!----------------Settings Menu"----------------------->
+    <div class="settings-menu" [class.settings-menu-height]="settingsMenuHeight">
+
+        <div class="settings-menu-inner">
+            <div class="user-profile">
+                <img [src]="profilepic">
+                <div>
+                    <p style=" color: white; font-size: 15px; padding: 5px">{{name + "@ayan"}}</p>
+                    <a style="color: white; padding-top: 0px;">&nbsp; View your Channel</a>
+                </div>
+            </div>
+            <hr>
+            <div class="user-profile">
+              <!-- <span class="material-symbols-outlined" style="height: 20px;">
+                g_translate
+                </span> -->
+              &nbsp;
+                <p>Google Account</p>
+            </div>
+            <div class="user-profile">
+              &nbsp;
+                <p>Switch Account</p>
+
+            </div>
+            <div class="user-profile">
+                &nbsp;
+                <p>Sign Out</p>
+
+            </div>
+            <hr>
+            <div class="settings-links">
+                <a href="#">&nbsp; YouTube Studio</a>
+            </div>
+            <div class="settings-links">
+                <a href="#">&nbsp; Purchases & Memberships </a>
+            </div>
+            <hr>
+            <div class="settings-links">
+                <a href="#">&nbsp; Your data in Youtube </a>
+            </div>
+            <div class="settings-links">
+                <a href="#">&nbsp; Language </a>
+            </div>
+            <div class="settings-links">
+                <a href="#">&nbsp; Appearance  </a>
+            </div>
+            <div class="settings-links">
+                <a href="#">&nbsp; Location </a>
+            </div>
+            <div class="settings-links">
+                <a href="#">&nbsp; Restriction </a>
+            </div>
+            <div class="settings-links">
+                <a href="#">&nbsp; Keyboard Shortcuts </a>
+            </div>
+            <hr>
+            <div class="settings-links">
+              <span class="material-symbols-outlined" >
+                settings
+                </span>
+                <a [routerLink]="['/settings']" routerLinkActive="active">&nbsp; Settings </a>
+            </div>
+            <hr>
+            <div class="settings-links">
+                <a href="#">&nbsp; Help! </a>
+            </div>
+            <div class="settings-links">
+                <a href="#">&nbsp; Send Feedback </a>
+            </div>
+        </div>
+
+    </div>
     </div>
   </div>

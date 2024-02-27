@@ -1,0 +1,98 @@
+<app-navbar/>
+<div class="sideBar">
+    <div class="heading">
+        <div style="font-size: x-large;">Settings</div>
+    </div>
+    <div *ngFor="let link of sidebarLinks" class="sidebar-link">
+        <div class="links">{{ link }}</div>
+    </div>
+</div>
+<div class="settings-screen">
+    <div class="account" style="height: 250px; display: flex;">
+        <div class="account-text" style="height: 125px;">
+            <div class="account-heading"
+                style="color: white;padding-top: 81px;margin-left: 100px; font-weight: bolder; font-size: 16px;">Account
+            </div>
+            <div class="account-instructions"
+                style="color: white;margin-left: 100px;margin-top: 49px; font-weight: bolder; font-size: 22px;">Choose
+                how you appear and
+                what you see on YouTube</div>
+            <div class="signed-in"
+                style="color: #AAAA9B;margin-left: 100px; font-size: small;margin-top: 12px; font-weight: bolder;">
+                Signed
+                in as {{mail}}</div>
+        </div>
+        <div class="account-logo" style="margin-top: 95px; margin-left: 250px;">
+            <img src="https://i.postimg.cc/nLJx2gj0/painting-mountain-lake-with-mountain-background-188544-9126.jpg" alt="settings"
+                style="width: 170px; height: auto;">
+        </div>
+    </div>
+    <hr>
+    <div class="your-channel" style="height: 250px;">
+        <div class="your-channel-heading">
+            <div class="heading-main"
+                style="color: white;padding-top: 20px;margin-left: 100px;font-weight: 700;font-size: larger;">Your
+                YouTube channel</div>
+            <div class="heading-sub" style="color: #AAAA9B;margin-left: 100px; font-size: small;margin-top: 12px;">This
+                is your public presence on YouTube. You need a channel to upload your own videos, comment on videos or
+                create playlists.</div>
+        </div>
+        <div class="your-channel-info" style="display: flex;">
+            <div class="channel-info-left"
+                style="color: white;padding-top: 15px;margin-left: 100px;font-size: small; font-weight: 600;">Your
+                channel</div>
+            <div class="channel-info-right" style="color: white;">
+                <div class="info-right-up">
+                    <button class="button" style="color: white; font-weight: bolder; font-size: 25px;">
+                        A
+                    </button>
+                    Ayan Sheikh
+                </div>
+                <div class="info-right-down" style="margin-left: 130px; margin-top: 25px;">
+                    <p style="font-size: 16px;color: #065fd4;"><b>Channel status and features</b></p>
+                    <p style="font-size: 16px;color: #065fd4;"><b>Create a new channel</b></p>
+                    <p style="font-size: 16px;color: #065fd4;"><b>View advanced settings</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="your-account">
+        <div class="your-account-heading">
+            <div class="heading-main"
+                style="color: white;padding-top: 20px;margin-left: 100px;font-weight: 700;font-size: larger;">Your
+                account</div>
+            <div class="heading-sub" style="color: #AAAA9B;margin-left: 100px; font-size: small;margin-top: 12px;">You
+                sign in to YouTube with your Google Account</div>
+        </div>
+        <div class="your-account-info" style="display: flex;">
+            <div class="account-info-left"
+                style="color: white;padding-top: 32px;padding-left: 100px;font-size: small; font-weight: 600;">
+                <p>Google Account</p>
+                <p style="margin-top: 50px;">Membership</p>
+            </div>
+
+            <div>
+                <div class="account-info-right" style="margin-top: 30px;">
+                    <p style="font-size: 17px;color: #3EA6FF;margin-left: 130px;"><b>View or change your Google Account
+                            settings</b></p>
+                    <p style="color: #AAAA9B;margin-left: 130px; font-size: 17px;"><b>You will be redirected to your
+                            Google
+                            Account page</b></p>
+
+                </div>
+
+                <div class="account-info-right" style="margin-top: 30px;">
+
+                    <p style="font-size: 17px;margin-left: 130px; font-weight: bolder; color: #3EA6FF;"><b
+                            style="color: white;"> No membership |</b> Get YouTube Premium </p>
+                    <p style="color: #AAAA9B;margin-left: 130px; font-size: 17px;"><b>YouTube Premium offers
+                            uninterrupted music, ad-free videos, and more</b></p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
