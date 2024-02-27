@@ -21,8 +21,14 @@
     padding: 16px 0px 14px;
     align-items:center;
 }
-.sidebar .icon:hover{
+.material-symbols-outlined a:hover{
     background-color: gray;
+    padding:20px;
+}
+
+
+.material-symbols-outlined a{
+    color:white
 }
 
 

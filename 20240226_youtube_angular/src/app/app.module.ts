@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentPageComponent } from './content-page/content-page.component';
 import { VideoContainerComponent } from './video-container/video-container.component';
+import { HomeComponent } from './home/home.component';
+import { SubscriberComponent } from './subscriber/subscriber.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { VideoContainerComponent } from './video-container/video-container.compo
     NavbarComponent,
     SidebarComponent,
     ContentPageComponent,
-    VideoContainerComponent
+    VideoContainerComponent,
+    HomeComponent,
+    SubscriberComponent
   ],
   imports: [
     BrowserModule,

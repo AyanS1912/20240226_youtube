@@ -1,12 +1,25 @@
 <div class="sidebar">
     <div class="icon" *ngFor="let data of sidebarIcon;let i = index">
         <div>
-            <span class="material-symbols-outlined">{{data.span_name}}
-                </span>
+            <ng-container *ngIf="data.span_name === 'subscriptions'; then first; else second"></ng-container>
+            <ng-template #first>
+                <span class="material-symbols-outlined"><a [routerLink]="['/subscriber']"
+                    routerLinkActive="active">{{data.span_name}}</a></span>
+            </ng-template>
+            <ng-template #second>
+                <ng-container *ngIf="data.span_name === 'home'; then home; else other"></ng-container>
+                <ng-template #home>
+                    <span class="material-symbols-outlined"><a [routerLink]="['/home']"
+                        routerLinkActive="active">{{data.span_name}}</a></span>
+                </ng-template>
+
+                <ng-template #other>
+                    <span class="material-symbols-outlined">{{data.span_name}}</span>
+                </ng-template>
+            </ng-template>
+
+            
         </div>
-        <div style="font-size:small;">{{data.text}}</div>
+        <div class="icon-name" style="font-size:small;">{{data.text}}</div>
     </div>
 </div>
-    
-    
-    

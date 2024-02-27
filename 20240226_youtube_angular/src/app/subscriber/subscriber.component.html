@@ -1,0 +1,51 @@
+<div class="homepage">
+    <app-navbar />
+    <div class="dashboard">
+        <app-sidebar />
+        <div class="view">
+            <div class="hscroll">
+                <button class="btn-scroll"> Home</button>
+                <button class="btn-scroll"> Music</button>
+
+                <button class="btn-scroll"> Mixes</button>
+                <button class="btn-scroll"> Gaming </button>
+                <button class="btn-scroll"> Bollywood Music</button>
+                <button class="btn-scroll"> Live </button>
+                <button class="btn-scroll"> Playlists </button>
+                <button class="btn-scroll"> Shark Tank</button>
+                <button class="btn-scroll"> CSS</button>
+                <button class="btn-scroll"> HTML</button>
+                <button class="btn-scroll"> Python </button>
+                <button class="btn-scroll"> Home</button>
+            </div>
+
+            <div class="videos-container">
+                <div class="video" *ngFor="let video of videos;let i = index;">
+                    <div>
+                        <img src="https://i.postimg.cc/3Jzy4nN8/wrestler-john-cena-c38b19ee-24ca-11ea-b71b-55a416c89533-1623576402503.jpg" alt="Video 1 Thumbnail">
+                    </div>
+
+                    <div class="video-details">
+                        <div class="details-1">
+                            <img
+                                src="https://i.postimg.cc/8cx4wH5R/HD-wallpaper-sasuke-uchiha-sharingan-naruto-characters-manga-artwork-naruto-thumbnail.jpg">
+                        </div>
+                        <div class="details-2">
+                            <h2>
+                                {{video.title}}
+                            </h2>
+                            <p>{{video.youtuber}}</p>
+                            <div class="views">
+                                <span>{{formatcount(video.views)}} views</span>
+                                <span>•</span>
+                                <span>{{video.year}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
